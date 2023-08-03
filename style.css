@@ -1,0 +1,68 @@
+:root {
+    --dark-color: #1F1F1F;
+    --light-color: #E0E0E0;
+    --primary-color: #00AAAA;
+    --secondary-color: #AA00AA;
+    --tertiary-color: #FF5555;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--light-color);
+    background-image: url(assets/banners/spawn8.PNG);
+    background-attachment: fixed;
+    background-position: top;
+    /* Get better font */
+    font-family: 'Prompt', sans-serif;
+}
+.navbar {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    height: 100px;
+}
+.logo a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar-right {
+    float: right;
+}
+  
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+        float: none;
+        display: block;
+    }
+
+    .logo a {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
