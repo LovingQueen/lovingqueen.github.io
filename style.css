@@ -9,19 +9,20 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: var(--light-color);
-    background-image: url(assets/banners/spawn8.PNG);
+    background-image: url(assets/banners/spawn4.PNG);
     background-attachment: fixed;
     background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
     /* Get better font */
     font-family: 'Prompt', sans-serif;
 }
-  
+
 .navbar {
     background-color: rgba(255, 255, 255, 0.3);;
     display:flex;
     align-items:center;
 }
-  
 .navbar div {
     display: flex;
     align-items: center;
@@ -36,6 +37,11 @@ body {
     text-decoration: none;
     color: var(--dark-color);
     font-size: x-large;
+    font-weight: bold;
     list-style-type: none;
-    /* margin:0 2%; */
 }
+/* #slide{
+    margin:0px;
+    width:100%;
+    position: fixed;
+} */
