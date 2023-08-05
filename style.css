@@ -5,11 +5,21 @@
     --secondary-color: #AA00AA;
     --tertiary-color: #FF5555;
 }
+
+.h1 {
+
+}
+.h2 {
+
+}
+.h3 {
+
+}
+
 body {
     margin: 0px;
     padding: 0px;
     background-color: var(--light-color);
-    background-image: url(assets/banners/spawn4.PNG);
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -40,8 +50,24 @@ body {
     font-weight: bold;
     list-style-type: none;
 }
-/* #slide{
-    margin:0px;
-    width:100%;
+
+.slide {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.slide img {
+    width: 100%;
+    z-index: -1;
     position: fixed;
+}
+/* .slide .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    z-index: 1;
 } */
+.slide .active{
+    opacity: 100%;
+}
