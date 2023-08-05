@@ -1,4 +1,3 @@
-// Path: carousel.js
 var slides = document.getElementsByClassName("slide");
 let index = 0;
 
