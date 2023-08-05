@@ -21,16 +21,24 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: var(--light-color);
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100%;
     /* Get better font */
     font-family: 'Prompt', sans-serif;
 }
 
+.banner {
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 516px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform:translate3d(0,0,0);
+}
+.section {
+    display: flex;
+    justify-content: center;
+}
+
 .navbar {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
     display:flex;
     align-items:center;
     -webkit-transform-style: preserve-3d;
@@ -75,4 +83,19 @@ body {
 .slide.active{
     opacity: 100%;
     transition: opacity 1s ease-in-out;
+}
+
+/* Boxes */
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.longBox {
+    margin: 30px;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: #AA00AA;
+    border-radius: 8px;
 }
